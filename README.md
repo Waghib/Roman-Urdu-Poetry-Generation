@@ -99,11 +99,6 @@ with open("tokenizer.pkl", "rb") as handle:
 # Generate poetry function (see app.py for implementation details)
 # ...
 ```
-
-## Data Flow
-
-![Flow Diagram](diagrams/Flow-Diagram.png)
-
 ## 🧠 Model Architecture
 
 The poetry generation model uses a sequence-to-sequence architecture with:

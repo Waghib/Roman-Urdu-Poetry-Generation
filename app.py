@@ -74,24 +74,5 @@ if st.button("✨ Generate Poetry"):
         st.write(f"📖 *{verse1}*")
         st.write(f"📖 *{verse2}*")
 
-        # Text-to-Speech using JavaScript inside Streamlit
-        js_code = f"""
-        <script>
-        function speakPoetry() {{
-            var msg = new SpeechSynthesisUtterance();
-            msg.text = `{verse1} {verse2}`;
-            msg.lang = "ur-PK";  // Urdu language
-            msg.rate = 0.9;  // Speed
-            window.speechSynthesis.speak(msg);
-        }}
-        </script>
-        <button onclick="speakPoetry()" style="background-color:#4CAF50;color:white;padding:10px;border:none;border-radius:5px;cursor:pointer;">
-        🔊 Listen to Poetry
-        </button>
-        """
-        
-        # Inject JavaScript using Streamlit Components
-        st.components.v1.html(js_code, height=50)
-
     else:
         st.warning("⚠️ Please enter a valid word to generate poetry!")
