@@ -4,6 +4,10 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-brightgreen)
 
+## System Architecture
+
+![System Architecture Diagram](diagrams/System-Architecture-Diagram.png)
+
 A deep learning model that generates Roman Urdu poetry using LSTM neural networks. This project includes both the model training pipeline and a user-friendly web interface for generating poetry.
 
 ## 📋 Table of Contents
@@ -95,6 +99,10 @@ with open("tokenizer.pkl", "rb") as handle:
 # Generate poetry function (see app.py for implementation details)
 # ...
 ```
+
+## Data Flow
+
+![Flow Diagram](diagrams/Flow-Diagram.png)
 
 ## 🧠 Model Architecture
 
